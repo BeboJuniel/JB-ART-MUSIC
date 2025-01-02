@@ -1,0 +1,100 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+header {
+    text-align: center;
+    background-color: #111;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.3);
+}
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #f00; /* Rojo brillante */
+}
+header h2 {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-top: 10px;
+}
+.banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+.banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    animation: slider 12s infinite;
+}
+@keyframes slider {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+.social {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+.social h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #f00;
+}
+.social a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #f00;
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s;
+}
+.social a:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+.content {
+    padding: 20px;
+    text-align: center;
+}
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #bbb;
+}
+.youtube-link {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #f00;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.youtube-link:hover {
+    background-color: #c00;
+}
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
